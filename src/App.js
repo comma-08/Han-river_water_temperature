@@ -7,7 +7,7 @@ function App() {
 
   useEffect(() => {
     // Fetch weather data
-    fetch('http://openapi.seoul.go.kr:8088/4467786b56776a643132326579434159/json/WPOSInformationTime/1/5/')
+    fetch('http://openapi.seoul.go.kr:8088/API키/json/WPOSInformationTime/1/5/')
       .then(res => res.json())
       .then(myJson => {
         setHangangTemp('한강' + '       ' + myJson.WPOSInformationTime.row[4].W_TEMP + "°C");
