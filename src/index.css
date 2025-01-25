@@ -1,0 +1,69 @@
+        /* Adding global styles */
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+
+      body {
+          font-family: Arial, sans-serif;
+          color: white;
+          background-image: url(https://images.pexels.com/photos/10265161/pexels-photo-10265161.jpeg);
+          background-repeat: no-repeat;
+          background-position: top center;
+          background-position: top;
+          background-position: bottom;
+          background-position: center;
+          background-position: left;
+          background-position: right;
+          backdrop-filter: blur(5px)
+      }
+
+      .uk-container {
+          display: flex;
+          height: 100vh;
+          text-align: center;
+          flex-wrap: wrap;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+      }
+
+      .text-wrapper {
+/* 임의의 넓이 설정 (200px이 넘어갈 경우 텍스트 줄바꿈) */
+  width : 200px;
+}
+.text {
+  /* 요소의 내용이 영역을 벗어날 경우 그 부분은 숨겨지게 처리 */ 
+  overflow: hidden;
+  /* 요소의 표시 방법을 -webkit-box로 표시 */
+  display: -webkit-box;
+  /* webkit-box로 표시된 자식 요소들의 배치 방법 결정 (여기서는 수직) */ 
+  -webkit-box-orient: vertical;
+  /* 요소 내 텍스트를 지정한 라인수까지만 표시 */
+  -webkit-line-clamp: 2;
+  /* 텍스트 양쪽정렬 */ 
+  text-align :justify;
+}   
+
+.more-text {
+  /* 글씨 크기,색상 지정 */ 
+  font-size: 16px;
+  color:rgb(255, 255, 255);
+
+  /* 마우스 포인트가 올라갔을 때 커서 모양을 포인터로 변경 */
+  cursor: pointer;
+
+}
+
+.less-text {
+
+  /* 글씨 크기,색상 지정 */
+  font-size: 16px;
+  color:rgb(255, 255, 255);
+  /* 마우스 포인트가 올라갔을 때 커서 모양을 포인터로 변경 */ 
+  cursor: pointer;
+/* 줄이기 버튼 (처음에는 안보이게) */
+  display: none;    
+
+}

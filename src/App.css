@@ -1,0 +1,35 @@
+/* Adding global styles */
+* {
+  margin: 0; /* 모든 요소의 기본 마진 제거 */
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+  background-image: url(https://images.pexels.com/photos/10265161/pexels-photo-10265161.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  backdrop-filter: blur(5px); /* 일부 브라우저에서 비호환성 문제 있을 수 있음 */
+  height: 100vh; /* 화면의 전체 높이를 사용 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.uk-container {
+  text-align: center;
+}
+
+.center-css {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1, h3 {
+  margin: 10px 0;
+}
+
